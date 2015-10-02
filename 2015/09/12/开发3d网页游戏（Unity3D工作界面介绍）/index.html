@@ -1,0 +1,480 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D） | nonesuch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="ye zhou">
+    
+
+    
+    <meta name="description" content="这一篇讲讲如何下载安装Unity3D，并且大概介绍一下它的工作界面和操作。
+下载安装Unity3D访问Unity官网，点击“Get Unity5”，然后在“PERSONAL EDITION”一栏下方点击“FREE DOWNLOAD”。下载完之后运行安装程序，等待一段时间后，安装完成。注意：如果电脑里没有安装Visual Stadio 2015，安装程序会自动安装，我们用它来编辑C#脚本。
+注册登录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D）">
+<meta property="og:url" content="http://rlovep.com/2015/09/12/开发3d网页游戏（Unity3D工作界面介绍）/index.html">
+<meta property="og:site_name" content="nonesuch">
+<meta property="og:description" content="这一篇讲讲如何下载安装Unity3D，并且大概介绍一下它的工作界面和操作。
+下载安装Unity3D访问Unity官网，点击“Get Unity5”，然后在“PERSONAL EDITION”一栏下方点击“FREE DOWNLOAD”。下载完之后运行安装程序，等待一段时间后，安装完成。注意：如果电脑里没有安装Visual Stadio 2015，安装程序会自动安装，我们用它来编辑C#脚本。
+注册登录">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/6.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/7.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/8.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/9.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/10.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/11.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/12.png">
+<meta property="og:updated_time" content="2015-09-13T08:04:04.149Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D）">
+<meta name="twitter:description" content="这一篇讲讲如何下载安装Unity3D，并且大概介绍一下它的工作界面和操作。
+下载安装Unity3D访问Unity官网，点击“Get Unity5”，然后在“PERSONAL EDITION”一栏下方点击“FREE DOWNLOAD”。下载完之后运行安装程序，等待一段时间后，安装完成。注意：如果电脑里没有安装Visual Stadio 2015，安装程序会自动安装，我们用它来编辑C#脚本。
+注册登录">
+
+    
+    <link rel="alternative" href="/atom.xml" title="nonesuch" type="application/atom+xml">
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="nonesuch">nonesuch</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:rlovep.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/09/12/开发3d网页游戏（Unity3D工作界面介绍）/" title="（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D）" itemprop="url">（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D）</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="ye zhou" target="_blank" itemprop="author">ye zhou</a>
+		
+  <p class="article-time">
+    <time datetime="2015-09-12T09:19:44.000Z" itemprop="datePublished"> 发表于 2015-09-12</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载安装Unity3D"><span class="toc-number">1.</span> <span class="toc-text">下载安装Unity3D</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册登录"><span class="toc-number">2.</span> <span class="toc-text">注册登录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unity工作界面和操作"><span class="toc-number">3.</span> <span class="toc-text">Unity工作界面和操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#打开Unity主界面如下，下面挨个介绍："><span class="toc-number">3.1.</span> <span class="toc-text">打开Unity主界面如下，下面挨个介绍：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unity搭建场景例子"><span class="toc-number">4.</span> <span class="toc-text">Unity搭建场景例子</span></a></li></ol>
+		
+		</div>
+		
+		<p>这一篇讲讲如何下载安装Unity3D，并且大概介绍一下它的工作界面和操作。</p>
+<h2 id="下载安装Unity3D">下载安装Unity3D</h2><p>访问<a href="http://unity3d.com/" target="_blank" rel="external">Unity官网</a>，点击“Get Unity5”，然后在“PERSONAL EDITION”一栏下方点击“FREE DOWNLOAD”。下载完之后运行安装程序，等待一段时间后，安装完成。<br>注意：如果电脑里没有安装Visual Stadio 2015，安装程序会自动安装，我们用它来编辑C#脚本。</p>
+<h2 id="注册登录">注册登录</h2><p>安装完成后，打开Unity3D，它会让你登录（如下图），点击“create one”到一个网站注册，注册登录以后，点击“new project”新建项目，进入主界面。<br><strong>注意</strong>：也可以不登陆使用Unity，但是我们经常需要上网下载一些材质、纹理，因此使用Unity时尽量保证自己联网！<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/6.png"></p>
+<h2 id="Unity工作界面和操作">Unity工作界面和操作</h2><h3 id="打开Unity主界面如下，下面挨个介绍：">打开Unity主界面如下，下面挨个介绍：</h3><p><img src="http://7xljxl.com1.z0.glb.clouddn.com/7.png"></p>
+<ol>
+<li>菜单栏：最上面一栏是菜单栏，功能相当多：FILE控制新建场景、新建项目；EDIT控制复制黏贴；ASSET控制各种引用外来图片纹理；GAMEPROJECT控制构建场景的物体，如灯光摄像机以及各种3D模型；COMPONENT控制物体的行为，通常要写脚本；WINDOWS控制各种视图的显示。</li>
+<li>Hierarchy：创建的3D物体的汇总，所有的GameObject都可以在这看到。</li>
+<li>播放按钮：Unity优秀的特点之一，可以随时按播放键查看自己的场景搭建情况，测试脚本。</li>
+<li>切换界面：可以切换场景、游戏界面和商店。在商店里有很多免费的材质纹理。</li>
+<li>Inspector：当你选择一个物体，它的所有属性会在这一栏显示。</li>
+<li>project：管理游戏的所有脚本、材质、纹理。</li>
+<li>console：脚本出现错误时会在这里显示。</li>
+</ol>
+<h2 id="Unity搭建场景例子">Unity搭建场景例子</h2><p>现在我们来搭建一个场景：一个正方体呈自由落体掉到一个平面上。<br>首先，我们点击GameObject，3D object, cube（如下图）<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/8.png"><br>在右边inspector中设置，让它的坐标为（0，0，0），长宽高分别为10，10，1（如下图）<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/9.png"><br>刚刚做的是地板，现在用同样的方法做一个立方体，属性如下图：<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/10.png"><br>然后我们给物体增加刚体属性：选中小正方体，点击Compent，physics，Rigidbody，如图：<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/11.png"><br>完成！点击播放键查看效果。<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/12.png"></p>
+<p>从上我们可以看出，Unity的操作真的是相当简单的。但是这只是最简单的运动，写游戏不可避免要自定义一些运动，这就需要使用C#脚本。我们在下一篇讲讲C#。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/网页游戏开发/">网页游戏开发</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/unity3D/">unity3D</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://rlovep.com/2015/09/12/开发3d网页游戏（Unity3D工作界面介绍）/" data-title="（二）开发3d网页游戏（Unity3D工作界面初探）（Unity3D） | nonesuch" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/09/13/开发3d网页游戏（快速入门c-）/" title="（三）开发3d网页游戏（快速入门C#）（Unity3D）">
+  <strong>上一篇：</strong><br/>
+  <span>
+  （三）开发3d网页游戏（快速入门C#）（Unity3D）</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/09/11/开发3d网页游戏（总论）/"  title="（一）开发3d网页游戏（总论）（Unity3D）">
+ <strong>下一篇：</strong><br/> 
+ <span>（一）开发3d网页游戏（总论）（Unity3D）
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#下载安装Unity3D"><span class="toc-number">1.</span> <span class="toc-text">下载安装Unity3D</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册登录"><span class="toc-number">2.</span> <span class="toc-text">注册登录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unity工作界面和操作"><span class="toc-number">3.</span> <span class="toc-text">Unity工作界面和操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#打开Unity主界面如下，下面挨个介绍："><span class="toc-number">3.1.</span> <span class="toc-text">打开Unity主界面如下，下面挨个介绍：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unity搭建场景例子"><span class="toc-number">4.</span> <span class="toc-text">Unity搭建场景例子</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/创建博客/" title="创建博客">创建博客<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/感悟与心得/" title="感悟与心得">感悟与心得<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网络安全/" title="网络安全">网络安全<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网页游戏开发/" title="网页游戏开发">网页游戏开发<sup>3</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/godaddy/" style="font-size: 10px;">godaddy</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jacman/" style="font-size: 10px;">jacman</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/unity3D/" style="font-size: 20px;">unity3D</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/感悟与心得/" style="font-size: 10px;">感悟与心得</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://blog.jobbole.com/64196/" target="_blank" title="如何成为一名黑客">如何成为一名黑客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.knownsec.com/Knownsec_RD_Checklist/v3.0.html" target="_blank" title="知道创宇研发技能表v3.0">知道创宇研发技能表v3.0</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.beierzhu.com/" target="_blank" title="朱贝尔的博客">朱贝尔的博客</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> Hi，I am Ye ZHOU. This is my privite technology blog. <br/>
+			If you want to communicate, contact to me.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:nonesuch93@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="ye zhou">ye zhou</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

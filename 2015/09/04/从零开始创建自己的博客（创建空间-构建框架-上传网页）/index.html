@@ -1,0 +1,500 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman) | nonesuch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="ye zhou">
+    
+
+    
+    <meta name="description" content="上一篇介绍了创建博客的总体流程，这一篇我们讲讲创建博客的前三步：创建空间、构建框架、上传网页
+创建空间
+如果你没有github帐号，请先进入github官网，点击sign up注册。
+登录后点击上图右下角的new repository（当然，也可以在个人帐号里创建）。在弹出的页面中，在Repository name处写：你的用户名.github.io。如我的用户名是nonesuch93unit，空">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman)">
+<meta property="og:url" content="http://rlovep.com/2015/09/04/从零开始创建自己的博客（创建空间-构建框架-上传网页）/index.html">
+<meta property="og:site_name" content="nonesuch">
+<meta property="og:description" content="上一篇介绍了创建博客的总体流程，这一篇我们讲讲创建博客的前三步：创建空间、构建框架、上传网页
+创建空间
+如果你没有github帐号，请先进入github官网，点击sign up注册。
+登录后点击上图右下角的new repository（当然，也可以在个人帐号里创建）。在弹出的页面中，在Repository name处写：你的用户名.github.io。如我的用户名是nonesuch93unit，空">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904164238.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904164224.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904161830.png">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/hexo-beginner's-guide_run-on-port-4000.jpg">
+<meta property="og:image" content="http://7xljxl.com1.z0.glb.clouddn.com/win7iis_3.jpg">
+<meta property="og:updated_time" content="2015-09-08T09:12:46.888Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman)">
+<meta name="twitter:description" content="上一篇介绍了创建博客的总体流程，这一篇我们讲讲创建博客的前三步：创建空间、构建框架、上传网页
+创建空间
+如果你没有github帐号，请先进入github官网，点击sign up注册。
+登录后点击上图右下角的new repository（当然，也可以在个人帐号里创建）。在弹出的页面中，在Repository name处写：你的用户名.github.io。如我的用户名是nonesuch93unit，空">
+
+    
+    <link rel="alternative" href="/atom.xml" title="nonesuch" type="application/atom+xml">
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="nonesuch">nonesuch</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:rlovep.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/09/04/从零开始创建自己的博客（创建空间-构建框架-上传网页）/" title="（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman)" itemprop="url">（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman)</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="ye zhou" target="_blank" itemprop="author">ye zhou</a>
+		
+  <p class="article-time">
+    <time datetime="2015-09-04T13:02:52.000Z" itemprop="datePublished"> 发表于 2015-09-04</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建空间"><span class="toc-number">1.</span> <span class="toc-text">创建空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建框架"><span class="toc-number">2.</span> <span class="toc-text">构建框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上传网页"><span class="toc-number">3.</span> <span class="toc-text">上传网页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置ssh"><span class="toc-number">3.1.</span> <span class="toc-text">配置ssh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检查连接是否成功"><span class="toc-number">3.2.</span> <span class="toc-text">检查连接是否成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上传文件"><span class="toc-number">3.3.</span> <span class="toc-text">上传文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">4.</span> <span class="toc-text">参考文献</span></a></li></ol>
+		
+		</div>
+		
+		<p>上一篇介绍了创建博客的总体流程，这一篇我们讲讲创建博客的前三步：创建空间、构建框架、上传网页</p>
+<h2 id="创建空间">创建空间</h2><ol>
+<li>如果你没有github帐号，请先进入<a href="https://github.com/" target="_blank" rel="external">github官网</a>，点击sign up注册。<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904164238.png"><br><img src="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904164224.png"></li>
+<li>登录后点击上图右下角的new repository（当然，也可以在个人帐号里创建）。在弹出的页面中，在Repository name处写：你的用户名.github.io。如我的用户名是nonesuch93unit，空间名就是nonesuch93unit.github.io。填写一段项目描述，点create repository。<br>这样空间就创建好了。</li>
+</ol>
+<h2 id="构建框架">构建框架</h2><p>上一篇我们提到，我们用hexo来创建站点框架。在此之前，请确认你的node.js和git都已经安装好了。<br>hexo的安装特别简单：打开开始菜单 -&gt; 所有程序 -&gt; Git -&gt; Git Bash。输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure></p>
+<p>回车之后等待一会儿，hexo就装好了。在电脑中建立一个文件夹，进入这个文件夹，然后在此文件夹中右键打开Git Bash。输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>你会看到下图：<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/QQ截图20150904161830.png"><br>按它说的，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure></p>
+<p>完成之后，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
+<p>然后<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure></p>
+<p>出现了下图：</p>
+<p>打开127.0.0.1：4000.看！这就是你的第一个博客！<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/hexo-beginner's-guide_run-on-port-4000.jpg"></p>
+<p><strong>注意</strong>，如果127.0.0.1：4000无法打开，可能是你的电脑没有安装iis服务。可按照以下方法安装IIS：</p>
+<ol>
+<li>打开控制面板，找到“程序与功能”，点进去。</li>
+<li>点击左侧“打开或关闭Windows功能”，点击“打开或关闭windows功能”，并找到“Internet 信息服务”</li>
+<li>按照下图勾选，然后确定，等待安装完成即可。<br><img src="http://7xljxl.com1.z0.glb.clouddn.com/win7iis_3.jpg"></li>
+</ol>
+<h2 id="上传网页">上传网页</h2><p>完成构建框架后，接下来要做的就是上传到github空间中。在这之前，我们要生成一个叫ssh的密匙，让github空间和我们本地文件连接。</p>
+<h3 id="配置ssh">配置ssh</h3><p>打开开始菜单，git，git bash，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -C <span class="string">'your@email.address'</span> -t rsa</span><br></pre></td></tr></table></figure></p>
+<p>连续三个回车之后会在windows当前用户目录下生成.ssh文件夹（在C:\Users\Administrator目录下），把文件夹下的id_rsa.pub文件内容全部复制。然后打开刚刚你生成的空间，点击Personal settings，SSH keys，点击add SSH key。把刚刚复制的内容复制到key中，点击add key，完成！</p>
+<h3 id="检查连接是否成功">检查连接是否成功</h3><p>打开git bash，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>如果出现You’ve successfully authenticated, but GitHub does not provide shell access. 则连接成功。</p>
+<h3 id="上传文件">上传文件</h3><p>还在刚刚新建的文件夹中，找到public文件夹，进入，右键点击Git Bash，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> 你的空间地址</span><br><span class="line">$ git init</span><br><span class="line">$ git remote add origin git@github.com:你的用户名/你的用户名.github.io.git  </span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>稍等一段时间后，打开浏览器输入你的用户名.github.io。你的博客已经出现在互联网上了！</p>
+<p><strong>注意</strong>：在上传文件之前，记得先在根目录hexo g一下。<br><strong>注意</strong>：如果上述方法上传失败，可尝试在网站根目录下git bash，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
+<p>然后根目录生成了一个.deploy_git的文件夹，进入之后git bash，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add origin git@github.com:你的用户名/你的用户名.github.io.git  </span><br><span class="line">$ git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>如果还是不行，尝试删除.deploy_git的文件夹后再试一次。</p>
+<p>下一篇讲讲如何申请域名并且设置DNS连接。</p>
+<h2 id="参考文献">参考文献</h2><ol>
+<li><a href="http://cnfeat.com/blog/2014/05/10/how-to-build-a-blog/" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></li>
+<li><a href="http://ons.me/147.html" target="_blank" rel="external">Windows7中IIS简单安装与配置</a></li>
+<li><a href="http://lazynight.me/2898.html" target="_blank" rel="external">Github上传代码菜鸟超详细教程</a></li>
+</ol>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/创建博客/">创建博客</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/hexo/">hexo</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://rlovep.com/2015/09/04/从零开始创建自己的博客（创建空间-构建框架-上传网页）/" data-title="（二）从零开始创建自己的博客（创建空间 + 构建框架 + 上传网页）(Github Pages + Hexo + jacman) | nonesuch" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/09/06/从零开始创建自己的博客（申请域名-DNS连接）/" title="（三）从零开始创建自己的博客（申请域名 + DNS连接）(Github Pages + Hexo + jacman)">
+  <strong>上一篇：</strong><br/>
+  <span>
+  （三）从零开始创建自己的博客（申请域名 + DNS连接）(Github Pages + Hexo + jacman)</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/09/04/从零开始创建自己的博客（总论及安装）/"  title="（一）从零开始创建自己的博客（总论及安装）(Github Pages + Hexo + jacman)">
+ <strong>下一篇：</strong><br/> 
+ <span>（一）从零开始创建自己的博客（总论及安装）(Github Pages + Hexo + jacman)
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#创建空间"><span class="toc-number">1.</span> <span class="toc-text">创建空间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建框架"><span class="toc-number">2.</span> <span class="toc-text">构建框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上传网页"><span class="toc-number">3.</span> <span class="toc-text">上传网页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置ssh"><span class="toc-number">3.1.</span> <span class="toc-text">配置ssh</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#检查连接是否成功"><span class="toc-number">3.2.</span> <span class="toc-text">检查连接是否成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上传文件"><span class="toc-number">3.3.</span> <span class="toc-text">上传文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考文献"><span class="toc-number">4.</span> <span class="toc-text">参考文献</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/创建博客/" title="创建博客">创建博客<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/感悟与心得/" title="感悟与心得">感悟与心得<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网络安全/" title="网络安全">网络安全<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网页游戏开发/" title="网页游戏开发">网页游戏开发<sup>3</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/godaddy/" style="font-size: 10px;">godaddy</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jacman/" style="font-size: 10px;">jacman</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/unity3D/" style="font-size: 20px;">unity3D</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/感悟与心得/" style="font-size: 10px;">感悟与心得</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://blog.jobbole.com/64196/" target="_blank" title="如何成为一名黑客">如何成为一名黑客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.knownsec.com/Knownsec_RD_Checklist/v3.0.html" target="_blank" title="知道创宇研发技能表v3.0">知道创宇研发技能表v3.0</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.beierzhu.com/" target="_blank" title="朱贝尔的博客">朱贝尔的博客</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> Hi，I am Ye ZHOU. This is my privite technology blog. <br/>
+			If you want to communicate, contact to me.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:nonesuch93@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="ye zhou">ye zhou</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

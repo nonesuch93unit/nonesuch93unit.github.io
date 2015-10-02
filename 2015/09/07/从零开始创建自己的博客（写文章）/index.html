@@ -1,0 +1,477 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman) | nonesuch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="ye zhou">
+    
+
+    
+    <meta name="description" content="经过前面几篇折腾下来，看到自己的博客终于出现在网上，是不是成就感爆棚呢？反正当初我看到自己的域名上有了自己的网页，激动得一天都打了鸡血似的！不过我们的博客现在没有任何我们的东西（应该只有自动生成的一篇“Hello”），要完善自己的博客，最重要的是写文章啦。本篇主要讲写文章用的markdown语法。
+文章相关的杂项markdown简介Markdown是一种轻量级的标记语言，为什么要用一门新的语言写文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman)">
+<meta property="og:url" content="http://rlovep.com/2015/09/07/从零开始创建自己的博客（写文章）/index.html">
+<meta property="og:site_name" content="nonesuch">
+<meta property="og:description" content="经过前面几篇折腾下来，看到自己的博客终于出现在网上，是不是成就感爆棚呢？反正当初我看到自己的域名上有了自己的网页，激动得一天都打了鸡血似的！不过我们的博客现在没有任何我们的东西（应该只有自动生成的一篇“Hello”），要完善自己的博客，最重要的是写文章啦。本篇主要讲写文章用的markdown语法。
+文章相关的杂项markdown简介Markdown是一种轻量级的标记语言，为什么要用一门新的语言写文">
+<meta property="og:updated_time" content="2015-09-07T15:17:35.254Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman)">
+<meta name="twitter:description" content="经过前面几篇折腾下来，看到自己的博客终于出现在网上，是不是成就感爆棚呢？反正当初我看到自己的域名上有了自己的网页，激动得一天都打了鸡血似的！不过我们的博客现在没有任何我们的东西（应该只有自动生成的一篇“Hello”），要完善自己的博客，最重要的是写文章啦。本篇主要讲写文章用的markdown语法。
+文章相关的杂项markdown简介Markdown是一种轻量级的标记语言，为什么要用一门新的语言写文">
+
+    
+    <link rel="alternative" href="/atom.xml" title="nonesuch" type="application/atom+xml">
+    
+    
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="nonesuch">nonesuch</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:rlovep.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/09/07/从零开始创建自己的博客（写文章）/" title="（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman)" itemprop="url">（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman)</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="ye zhou" target="_blank" itemprop="author">ye zhou</a>
+		
+  <p class="article-time">
+    <time datetime="2015-09-07T14:06:50.000Z" itemprop="datePublished"> 发表于 2015-09-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章相关的杂项"><span class="toc-number">1.</span> <span class="toc-text">文章相关的杂项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown简介"><span class="toc-number">1.1.</span> <span class="toc-text">markdown简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建文章"><span class="toc-number">1.2.</span> <span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改文章名"><span class="toc-number">1.3.</span> <span class="toc-text">修改文章名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文章"><span class="toc-number">1.4.</span> <span class="toc-text">删除文章</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown语法简介"><span class="toc-number">2.</span> <span class="toc-text">markdown语法简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首先声明"><span class="toc-number">2.1.</span> <span class="toc-text">首先声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字与段落"><span class="toc-number">2.2.</span> <span class="toc-text">文字与段落</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图片"><span class="toc-number">2.3.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超链接"><span class="toc-number">2.4.</span> <span class="toc-text">超链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">3.</span> <span class="toc-text">参考资料</span></a></li></ol>
+		
+		</div>
+		
+		<p>经过前面几篇折腾下来，看到自己的博客终于出现在网上，是不是成就感爆棚呢？反正当初我看到自己的域名上有了自己的网页，激动得一天都打了鸡血似的！<br>不过我们的博客现在没有任何我们的东西（应该只有自动生成的一篇“Hello”），要完善自己的博客，最重要的是写文章啦。本篇主要讲写文章用的markdown语法。</p>
+<h2 id="文章相关的杂项">文章相关的杂项</h2><h3 id="markdown简介">markdown简介</h3><p>Markdown是一种轻量级的标记语言，为什么要用一门新的语言写文章呢？有同学可能知道，网页上显示的文字和图片，实际上是一条条html代码组成的。markdown介于html和自然语言之间，它相当简单，清晰。读完这篇文章之后，哪怕没有任何编程基础，相信你就能够运用markdown写文章了！<br>编辑markdown需要一个文本编辑器，推荐nodepad++，小巧精致，转换格式也十分方便。当然你喜欢用记事本也可以。</p>
+<h3 id="创建文章">创建文章</h3><p>在你的博客文件夹根目录下（就是之前运行hexo g的地方）打开git bash，输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"你的文章名"</span></span><br></pre></td></tr></table></figure></p>
+<p>按回车后，文章即被创建在根目录\source_posts 文件夹中。<strong>注意: 上面命令的双引号为英语输入法，否则会出现问题。</strong><br>在该文件夹中找到你的文章，名字是“你的文章名.md”，这里的md就是markdown的意思。<br>用你的文本编辑器打开这个文件，你会看到文章的题目，日期，以及一个分割线“—”，分割线一下就是你写markdown的地方。<br><strong>注意：如果要写中文，要讲文章保存为utf-8编码模式。以nodepad++为例，在nodepad++上方的菜单栏里选择格式，转为utf-8编码格式，即可。</strong></p>
+<h3 id="修改文章名">修改文章名</h3><p>直接修改md文件的文件名，再修改文件里title的属性，就可以了。</p>
+<h3 id="删除文章">删除文章</h3><p>直接删除md文件就删除了这篇文章</p>
+<h2 id="markdown语法简介">markdown语法简介</h2><p>前面说了那么多杂七杂八的东西，现在让我们来开始研究一下markdown语法吧！当然，我不可能把它所有的语法特性都写出来，调几个最常用的大家应该够用了，遇到问题了再查文档吧。</p>
+<h3 id="首先声明">首先声明</h3><p>markdown完全兼容html语言，会用的同学能直接写了！（鼓掌！）</p>
+<h3 id="文字与段落">文字与段落</h3><ol>
+<li>普通段落：段落没有特殊语法，直接写就可以了！（撒花！）</li>
+<li>标题：markdown表示标题的方式是用“#”号，语法：井号（一到六个）+ <strong>空格</strong> + 标题内容。井号越少标题越大。</li>
+<li>分割线：语法：三个“-”号，简单暴力！</li>
+<li>区块引用：语法，在引用的语句前面加上“&gt;”号就行了。</li>
+<li>加粗、斜体：在要斜体的文字前后加上“*”，中间的文字就变成斜体了，在要加粗文字的前后加上“**”，文字就加粗了。（什么？你问加粗加斜体怎么做？自己<strong><em>试试看</em></strong>！）</li>
+<li>如果要把“#”，“*”这些特殊符号当普通符号输出，在前面加上一个反斜杠“\”即可。</li>
+</ol>
+<h3 id="图片">图片</h3><p>markdown表示图片的方法不太方便（显然，用自然语言表示一张图片是有难度的。），推荐使用html的图片表示法：</p>
+<pre>&lt;img <code>src=&quot;你的图片位置&quot;</code> /&gt;</pre>
+
+<h3 id="超链接">超链接</h3><p>使用语法<a href=""></a>,中括号中写链接的名字，小括号中写链接指向的地址。</p>
+<p>至此，markdown语法介绍到这里，基本上写一般的博客都够用了。建议大家写的时候可以多多尝试：可以用hexo s命令运行本地服务器，然后在127.0.0.1：4000上看效果。文件有更改也不用重启服务器，直接刷新页面就可以了。多尝试就会发现，markdown是多么的简单好用。<br>如果你想知道更多的markdown用法，可以访问<a href="http://wowubuntu.com/markdown/#list" target="_blank" rel="external">http://wowubuntu.com/markdown/#list</a> 查看，讲得非常详细。<br>我们的博客基础篇已经讲完了，大家都可以拥有自己的博客了。但是，如何让自己的博客更个性化呢？下一篇讲：克隆主题。</p>
+<h2 id="参考资料">参考资料</h2><p><a href="http://wowubuntu.com/markdown/#list" target="_blank" rel="external">markdown文档</a></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/创建博客/">创建博客</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/markdown/">markdown</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://rlovep.com/2015/09/07/从零开始创建自己的博客（写文章）/" data-title="（四）从零开始创建自己的博客（写文章）(Github Pages + Hexo + jacman) | nonesuch" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/09/07/从零开始创建自己的博客（克隆主题）/" title="（五）从零开始创建自己的博客（克隆主题 + 个性化 + 杂项 + 总结）(Github Pages + Hexo + jacman)">
+  <strong>上一篇：</strong><br/>
+  <span>
+  （五）从零开始创建自己的博客（克隆主题 + 个性化 + 杂项 + 总结）(Github Pages + Hexo + jacman)</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/09/06/从零开始创建自己的博客（申请域名-DNS连接）/"  title="（三）从零开始创建自己的博客（申请域名 + DNS连接）(Github Pages + Hexo + jacman)">
+ <strong>下一篇：</strong><br/> 
+ <span>（三）从零开始创建自己的博客（申请域名 + DNS连接）(Github Pages + Hexo + jacman)
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+
+</div>  
+
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章相关的杂项"><span class="toc-number">1.</span> <span class="toc-text">文章相关的杂项</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown简介"><span class="toc-number">1.1.</span> <span class="toc-text">markdown简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建文章"><span class="toc-number">1.2.</span> <span class="toc-text">创建文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改文章名"><span class="toc-number">1.3.</span> <span class="toc-text">修改文章名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除文章"><span class="toc-number">1.4.</span> <span class="toc-text">删除文章</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown语法简介"><span class="toc-number">2.</span> <span class="toc-text">markdown语法简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首先声明"><span class="toc-number">2.1.</span> <span class="toc-text">首先声明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字与段落"><span class="toc-number">2.2.</span> <span class="toc-text">文字与段落</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图片"><span class="toc-number">2.3.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#超链接"><span class="toc-number">2.4.</span> <span class="toc-text">超链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考资料"><span class="toc-number">3.</span> <span class="toc-text">参考资料</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/创建博客/" title="创建博客">创建博客<sup>5</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/感悟与心得/" title="感悟与心得">感悟与心得<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网络安全/" title="网络安全">网络安全<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/网页游戏开发/" title="网页游戏开发">网页游戏开发<sup>3</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/C/" style="font-size: 10px;">C#</a> <a href="/tags/godaddy/" style="font-size: 10px;">godaddy</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jacman/" style="font-size: 10px;">jacman</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/unity3D/" style="font-size: 20px;">unity3D</a> <a href="/tags/xss/" style="font-size: 10px;">xss</a> <a href="/tags/感悟与心得/" style="font-size: 10px;">感悟与心得</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="http://blog.jobbole.com/64196/" target="_blank" title="如何成为一名黑客">如何成为一名黑客</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://blog.knownsec.com/Knownsec_RD_Checklist/v3.0.html" target="_blank" title="知道创宇研发技能表v3.0">知道创宇研发技能表v3.0</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://www.beierzhu.com/" target="_blank" title="朱贝尔的博客">朱贝尔的博客</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	
+	<section class="info">
+		<p> Hi，I am Ye ZHOU. This is my privite technology blog. <br/>
+			If you want to communicate, contact to me.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:nonesuch93@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2015 
+		
+		<a href="/about" target="_blank" title="ye zhou">ye zhou</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
